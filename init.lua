@@ -4,26 +4,26 @@
 -- updater
 Services = {
     --updater = "http://localhost/api/updater.php", --./updater
-    --status = "http://localhost/api/status.php", --./client_entergame | ./client_topmenu
-    --websites = "http://localhost/?subtopic=accountmanagement", --./client_entergame "Forgot password and/or email"
+    status = "http://localhost/api/status.php", --./client_entergame | ./client_topmenu
+    websites = "http://localhost/?subtopic=accountmanagement", --./client_entergame "Forgot password and/or email"
 }
 
---[[ Servers_init = {
-    ["http://ip/login.php"] = {
+Servers_init = {
+    ["http://127.0.0.1/login.php"] = {
         ["port"] = 80,
-        ["protocol"] = 1332,
+        ["protocol"] = 1340,
         ["httpLogin"] = true
     },
-    ["ip.net"] = {
-        ["port"] = 7171,
-        ["protocol"] = 860,
-        ["httpLogin"] = false
-    },
+   -- ["ip.net"] = {
+     --   ["port"] = 7171,
+      --  ["protocol"] = 860,
+       -- ["httpLogin"] = false
+   -- },
 
-} ]]
+} 
 
-g_app.setName("OTClient - Redemption");
-g_app.setCompactName("otclient");
+g_app.setName("Rhamon's Adventures - Redemption");
+g_app.setCompactName("otcrient");
 g_app.setOrganizationName("otcr");
 
 g_app.hasUpdater = function()
