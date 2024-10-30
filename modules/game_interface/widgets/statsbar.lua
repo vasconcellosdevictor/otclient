@@ -48,6 +48,7 @@ local skillsTuples = {
     {skill = Skill.Shielding,   key = 'shielding',  icon = '/images/icons/icon_shielding',   placement = 'right',    order = 3,  name = "Shielding Fighting Skill"},
     {skill = Skill.Sword,       key = 'sword',      icon = '/images/icons/icon_sword',       placement = 'left',     order = 4,  name = "Sword Fighting Skill"},
     {skill = Skill.Fishing,     key = 'fishing',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Fishing Fighting Skill"},
+    {skill = Skill.Mining,     key = 'mining',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Mining Fighting Skill"},
 }
 
 StatsBar = {}

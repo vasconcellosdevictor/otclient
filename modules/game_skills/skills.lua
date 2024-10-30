@@ -119,7 +119,7 @@ function setSkillValue(id, value)
     local skill = skillsWindow:recursiveGetChildById(id)
     if skill then
         local widget = skill:getChildById('value')
-        if id == "skillId7" or id == "skillId9" or id == "skillId11" or id == "skillId13" or id == "skillId14" or id == "skillId15" or id == "skillId16" then
+        if id == "skillId8" or id == "skillId9" or id == "skillId10" or id == "skillId11" or id == "skillId12" or id == "skillId13" or id == "skillId14" or id == "skillId15" or id == "skillId16" or id == "skillId17" then
             local value = value / 100
             widget:setText(value .. "%")
         else
@@ -256,19 +256,17 @@ function refresh()
     for i = Skill.Fist, Skill.Transcendence do
         onSkillChange(player, i, player:getSkillLevel(i), player:getSkillLevelPercent(i))
 
-        if i > Skill.Fishing then
+        if i > Skill.Mining then
             local ativedAdditionalSkills = hasAdditionalSkills
             if ativedAdditionalSkills then
                 if g_game.getClientVersion() >= 1281 then
 	            if i == Skill.LifeLeechAmount or i == Skill.ManaLeechAmount then
-                        ativedAdditionalSkills = false
-                    elseif g_game.getClientVersion() < 1332 and Skill.Transcendence then
-                        ativedAdditionalSkills = false
+                        ativedAdditionalSkills = true
                     elseif i >= Skill.Fatal and player:getSkillLevel(i) <= 0 then
-                        ativedAdditionalSkills = false
+                        ativedAdditionalSkills = true
                     end
 		elseif g_game.getClientVersion() < 1281 and i >= Skill.Fatal then
-                    ativedAdditionalSkills = false
+                    ativedAdditionalSkills = true
 	        end
             end
 

@@ -297,6 +297,9 @@ function whenSkillsChange()
             elseif skillType == 'fishing' then
                 skillPercent = player:getSkillLevelPercent(6)
                 skillColor = '#ffff33'
+            elseif skillType == 'mining' then
+                skillPercent = player:getSkillLevelPercent(7)
+                skillColor = '#ffff33'
             else
                 -- default skill: MAGIC
                 skillPercent = player:getMagicLevelPercent()
@@ -534,6 +537,7 @@ function addToOptionsModule()
     chooseSkillComboBox:addOption('Distance Fighting', 'distance')
     chooseSkillComboBox:addOption('Shielding', 'shielding')
     chooseSkillComboBox:addOption('Fishing', 'fishing')
+    chooseSkillComboBox:addOption('Mining', 'mining')
 
     chooseStatsBarPlacement:addOption(tr('Top'), 'top')
     chooseStatsBarPlacement:addOption(tr('Bottom'), 'bottom')

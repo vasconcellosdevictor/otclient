@@ -849,7 +849,7 @@ function Cyclopedia.loadCharacterGeneralStats(data, skills)
         tr("You have %s percent to go", 100 - data.magicLevelPercent / 100))
     Cyclopedia.setCharacterSkillBase("magiclevel", data.magicLevel, data.baseMagicLevel)
 
-    for i = Skill.Fist + 1, Skill.Fishing + 1 do
+    for i = Skill.Fist + 1, Skill.Mining + 1 do
         local skillLevel = skills[i][1]
         local baseSkill = skills[i][2]
         local skillPercent = skills[i][3]

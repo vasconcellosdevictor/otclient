@@ -218,62 +218,72 @@ MiniWindow
         image-size: 9 9
       SkillPercentPanel
 
-    SmallSkillButton
+    SkillButton
       id: skillId7
+      SkillNameLabel
+        !text: tr('Mining')
+      SkillValueLabel
+      ImageSkill
+        image-source: /images/icons/icon_fishing
+        image-size: 9 9
+      SkillPercentPanel
+
+    SmallSkillButton
+      id: skillId8
       SkillNameLabel
         !text: tr('Critical Hit Chance')
       SkillValueLabel
 
     SmallSkillButton
-      id: skillId8
+      id: skillId9
       SkillNameLabel
         !text: tr('Critical Hit Damage')
       SkillValueLabel
 
     SmallSkillButton
-      id: skillId9
+      id: skillId10
       SkillNameLabel
         !text: tr('Life Leech Chance')
       SkillValueLabel
 
     SmallSkillButton
-      id: skillId10
+      id: skillId11
       SkillNameLabel
         !text: tr('Life Leech Amount')
       SkillValueLabel
 
     SmallSkillButton
-      id: skillId11
+      id: skillId12
       SkillNameLabel
         !text: tr('Mana Leech Chance')
       SkillValueLabel
 
     SmallSkillButton
-      id: skillId12
+      id: skillId13
       SkillNameLabel
         !text: tr('Mana Leech Amount')
       SkillValueLabel
 
     SmallSkillButton
-      id: skillId13
+      id: skillId14
       SkillNameLabel
         !text: tr('Fatal')
       SkillValueLabel
 
     SmallSkillButton
-      id: skillId14
+      id: skillId15
       SkillNameLabel
         !text: tr('Dodge')
       SkillValueLabel
 
     SmallSkillButton
-      id: skillId15
+      id: skillId16
       SkillNameLabel
         !text: tr('Momentum')
       SkillValueLabel
 
     SmallSkillButton
-      id: skillId16
+      id: skillId17
       SkillNameLabel
         !text: tr('Transcendence')
       SkillValueLabel
