@@ -582,7 +582,7 @@ function Cyclopedia.loadCharacterCombatStats(data, mitigation, additionalSkillsA
     UI.CombatStats.mitigation.value:setText(string.format("%.2f%%", mitigation))
     UI.CombatStats.blessings.value:setText(string.format("%d/8", data.haveBlessings))
 --XXXXX
-    for i = 0, 8 do
+    for i = 0, 6 do
         local id = "reduction_" .. i
         if UI.CombatStats[id] then
             UI.CombatStats[id]:destroy()
@@ -639,7 +639,7 @@ function Cyclopedia.loadCharacterCombatStats(data, mitigation, additionalSkillsA
     -- Critical Chance
     local skillIndex = skillsIndexes[Skill.CriticalChance]
     local skill = additionalSkillsArray[skillIndex][2]
-    UI.CombatStats.criticalChance.value:setText(skill .. "%")
+    UI.CombatStats.criticalChance.value:setText(string.format("%.2f%%", skill / 100))
     if skill > 0 then
         UI.CombatStats.criticalChance.value:setColor("#44AD25")
     else
@@ -649,7 +649,7 @@ function Cyclopedia.loadCharacterCombatStats(data, mitigation, additionalSkillsA
     -- Critical Damage
     skillIndex = skillsIndexes[Skill.CriticalDamage]
     skill = additionalSkillsArray[skillIndex][2]
-    UI.CombatStats.criticalDamage.value:setText(skill .. "%")
+    UI.CombatStats.criticalDamage.value:setText(string.format("%.2f%%", skill / 100))
     if skill > 0 then
         UI.CombatStats.criticalDamage.value:setColor("#44AD25")
     else
