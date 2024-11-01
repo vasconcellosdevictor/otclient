@@ -394,7 +394,7 @@ UIWidget
       anchors.top: skillsLabel.bottom
       anchors.left: separator.left
       anchors.right: parent.right
-      margin-top: 10
+      margin-top: 1
       SkillNameLabel
         !text: tr('Magic')
         color: #C0C0C0
@@ -412,7 +412,7 @@ UIWidget
       anchors.top: magiclevel.bottom
       anchors.left: separator.left
       anchors.right: parent.right
-      margin-top: 13
+      margin-top: 3
       SkillNameLabel
         !text: tr('Fist')
         color: #C0C0C0
@@ -430,7 +430,7 @@ UIWidget
       anchors.top: skillId0.bottom
       anchors.left: separator.left
       anchors.right: parent.right
-      margin-top: 13
+      margin-top: 3
       SkillNameLabel
         !text: tr('Club')
         color: #C0C0C0
@@ -448,7 +448,7 @@ UIWidget
       anchors.top: skillId1.bottom
       anchors.left: separator.left
       anchors.right: parent.right
-      margin-top: 13
+      margin-top: 3
       SkillNameLabel
         !text: tr('Sword')
         color: #C0C0C0
@@ -466,7 +466,7 @@ UIWidget
       anchors.top: skillId2.bottom
       anchors.left: separator.left
       anchors.right: parent.right
-      margin-top: 13
+      margin-top: 3
       SkillNameLabel
         !text: tr('Axe')
         color: #C0C0C0
@@ -484,7 +484,7 @@ UIWidget
       anchors.top: skillId3.bottom
       anchors.left: separator.left
       anchors.right: parent.right
-      margin-top: 13
+      margin-top: 3
       SkillNameLabel
         !text: tr('Distance')
         color: #C0C0C0
@@ -502,7 +502,7 @@ UIWidget
       anchors.top: skillId4.bottom
       anchors.left: separator.left
       anchors.right: parent.right
-      margin-top: 13
+      margin-top: 3
       SkillNameLabel
         !text: tr('Shielding')
         color: #C0C0C0
@@ -520,7 +520,7 @@ UIWidget
       anchors.top: skillId5.bottom
       anchors.left: separator.left
       anchors.right: parent.right
-      margin-top: 13
+      margin-top: 3
       SkillNameLabel
         !text: tr('Fishing')
         color: #C0C0C0
@@ -533,10 +533,28 @@ UIWidget
         margin-top: 15
         margin-left: 5
         background-color: #00C000
+    CharacterSkillBase
+      id: skillId7
+      anchors.top: skillId6.bottom
+      anchors.left: separator.left
+      anchors.right: parent.right
+      margin-top: 3
+      SkillNameLabel
+        !text: tr('Mining')
+        color: #C0C0C0
+      SkillValueLabel
+      SkillCharacterIcon
+        anchors.left: parent.left
+        image-clip: 72 0 9 9
+      SkillCharacterPercentPanel
+        anchors.left: icon.right
+        margin-top: 15
+        margin-left: 5
+        background-color: #00C000        
     Label
       !text: tr('Account Badges')
       margin-top: 12
-      anchors.top: skillId6.bottom
+      anchors.top: skillId7.bottom
       anchors.left: separator.left
       anchors.right: parent.right
       margin-left: 75

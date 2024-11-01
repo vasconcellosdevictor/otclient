@@ -557,7 +557,7 @@ function Cyclopedia.loadCharacterRecentDeaths(data)
         end
     end
 end
-
+--XXXXX HARDCODED SKILLS, PROBLEMA NO EXTRA HIT DAMAGE
 function Cyclopedia.loadCharacterCombatStats(data, mitigation, additionalSkillsArray, forgeSkillsArray,
     perfectShotDamageRanges, combatsArray, concoctionsArray)
     UI.CombatStats.attack.icon:setImageSource(Icons[data.weaponElement+1].icon)
@@ -565,14 +565,14 @@ function Cyclopedia.loadCharacterCombatStats(data, mitigation, additionalSkillsA
     UI.CombatStats.attack.value:setText(data.weaponMaxHitChance)
 
     if data.weaponElementDamage > 0 then
-        UI.CombatStats.converted.none:setVisible(false)
+        UI.CombatStats.converted.none:setVisible(true)
         UI.CombatStats.converted.value:setVisible(true)
-        UI.CombatStats.converted.icon:setVisible(true)
+        UI.CombatStats.converted.icon:setVisible(false)
         UI.CombatStats.converted.icon:setImageSource(Icons[data.weaponElementType+1].icon)
         UI.CombatStats.converted.icon:setImageClip(Icons[data.weaponElementType+1].clip)
         UI.CombatStats.converted.value:setText(data.weaponElementDamage .. "%")
     else
-        UI.CombatStats.converted.none:setVisible(true)
+        UI.CombatStats.converted.none:setVisible(false)
         UI.CombatStats.converted.value:setVisible(false)
         UI.CombatStats.converted.icon:setVisible(false)
     end
@@ -581,8 +581,8 @@ function Cyclopedia.loadCharacterCombatStats(data, mitigation, additionalSkillsA
     UI.CombatStats.armor.value:setText(data.armor)
     UI.CombatStats.mitigation.value:setText(string.format("%.2f%%", mitigation))
     UI.CombatStats.blessings.value:setText(string.format("%d/8", data.haveBlessings))
-
-    for i = 0, 6 do
+--XXXXX
+    for i = 0, 8 do
         local id = "reduction_" .. i
         if UI.CombatStats[id] then
             UI.CombatStats[id]:destroy()
@@ -697,10 +697,10 @@ function Cyclopedia.loadCharacterCombatStats(data, mitigation, additionalSkillsA
             widget:setId("special_" .. skillId)
 
             local specialName = {
-                [13] = "Onslaught",
-                [14] = "Ruse",
-                [15] = "Momentum",
-                [16] = "Transcendence"
+                [14] = "Onslaught",
+                [15] = "Ruse",
+                [16] = "Momentum",
+                [17] = "Transcendence"
             }
 
             if firstSpecial then

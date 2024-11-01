@@ -251,7 +251,7 @@ function refresh()
     onOfflineTrainingChange(player, player:getOfflineTrainingTime())
     onRegenerationChange(player, player:getRegenerationTime())
     onSpeedChange(player, player:getSpeed())
-
+--XXXXX
     local hasAdditionalSkills = g_game.getFeature(GameAdditionalSkills)
     for i = Skill.Fist, Skill.Transcendence do
         onSkillChange(player, i, player:getSkillLevel(i), player:getSkillLevelPercent(i))
@@ -261,12 +261,14 @@ function refresh()
             if ativedAdditionalSkills then
                 if g_game.getClientVersion() >= 1281 then
 	            if i == Skill.LifeLeechAmount or i == Skill.ManaLeechAmount then
-                        ativedAdditionalSkills = true
+                        ativedAdditionalSkills = false
+                    elseif g_game.getClientVersion() < 1332 and Skill.Transcendence then
+                        ativedAdditionalSkills = false
                     elseif i >= Skill.Fatal and player:getSkillLevel(i) <= 0 then
-                        ativedAdditionalSkills = true
+                        ativedAdditionalSkills = false
                     end
 		elseif g_game.getClientVersion() < 1281 and i >= Skill.Fatal then
-                    ativedAdditionalSkills = true
+                    ativedAdditionalSkills = false
 	        end
             end
 
