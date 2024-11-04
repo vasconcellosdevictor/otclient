@@ -69,8 +69,8 @@ UIWidget
     anchors.top: parent.top
     anchors.bottom: parent.bottom
     focusable: false
-    visible: true
-    on: true
+    visible: false
+    on: false
     $!on:
       width: 0
       visible: false
@@ -82,8 +82,8 @@ UIWidget
     anchors.bottom: parent.bottom
     margin-left: 1
     focusable: false
-    visible: true
-    on: true
+    visible: false
+    on: false
     $!on:
       width: 0
       visible: false
@@ -97,7 +97,7 @@ UIWidget
     height: 200
     focusable: false
     height: 1
-    on: true
+    on: false
 
   GameSidePanel
     id: gameRightPanel
@@ -105,7 +105,7 @@ UIWidget
     anchors.top: gameMainRightPanel.bottom
     anchors.bottom: parent.bottom
     focusable: false
-    on: true
+    on: false
 
   GameSidePanel
     id: gameRightExtraPanel
@@ -114,8 +114,8 @@ UIWidget
     anchors.bottom: parent.bottom
     margin-right: 1
     focusable: false
-    visible: true
-    on: true
+    visible: false
+    on: false
     $!on:
       width: 0
       visible: false

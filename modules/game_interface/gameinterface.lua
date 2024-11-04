@@ -22,7 +22,7 @@ logoutWindow = nil
 exitWindow = nil
 bottomSplitter = nil
 limitedZoom = false
-currentViewMode = 0
+currentViewMode = 1
 smartWalkDirs = {}
 smartWalkDir = nil
 leftIncreaseSidePanels = nil
@@ -282,7 +282,7 @@ function show()
     updateStretchShrink()
     logoutButton:setTooltip(tr('Logout'))
 
-    setupViewMode(0)
+    setupViewMode(2)
 
     addEvent(function()
         if not limitedZoom or g_game.isGM() then
@@ -1265,10 +1265,11 @@ function setupViewMode(mode)
         })
     elseif mode == 2 then
         local limit = limitedZoom and not g_game.isGM()
+        gameMapPanel:setKeepAspectRatio(false)        
         gameMapPanel:setLimitVisibleRange(limit)
-        gameMapPanel:setZoom(11)
+        gameMapPanel:setZoom(15)
         gameMapPanel:setVisibleDimension({
-            width = 15,
+            width = 19,
             height = 11
         })
         gameMapPanel:fill('parent')
@@ -1277,14 +1278,14 @@ function setupViewMode(mode)
         gameRightPanel:setImageColor('alpha')
         gameRightExtraPanel:setImageColor('alpha')
         gameLeftExtraPanel:setImageColor('alpha')
-        gameLeftPanel:setOn(true)
-        gameLeftPanel:setVisible(true)
-        gameRightPanel:setOn(true)
-        gameRightExtraPanel:setOn(true)
-        gameRightExtraPanel:setVisible(true)
-        gameLeftExtraPanel:setOn(true)
-        gameLeftExtraPanel:setVisible(true)
-        gameMapPanel:setOn(true)
+        gameLeftPanel:setOn(false)
+        gameLeftPanel:setVisible(false)
+        gameRightPanel:setOn(false)
+        gameRightExtraPanel:setOn(false)
+        gameRightExtraPanel:setVisible(false)
+        gameLeftExtraPanel:setOn(false)
+        gameLeftExtraPanel:setVisible(false)
+        gameMapPanel:setOn(false)
         gameBottomPanel:setImageColor('#ffffff88')
         modules.client_topmenu.getTopMenu():setImageColor('#ffffff66')
     end
