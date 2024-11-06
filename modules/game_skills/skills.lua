@@ -119,7 +119,7 @@ function setSkillValue(id, value)
     local skill = skillsWindow:recursiveGetChildById(id)
     if skill then
         local widget = skill:getChildById('value')
-        if id == "skillId8" or id == "skillId9" or id == "skillId10" or id == "skillId11" or id == "skillId12" or id == "skillId13" or id == "skillId14" or id == "skillId15" or id == "skillId16" or id == "skillId17" then
+        if id == "skillId22" or id == "skillId23" or id == "skillId24" or id == "skillId25" or id == "skillId26" or id == "skillId27" or id == "skillId28" or id == "skillId29" or id == "skillId30" or id == "skillId31" then
             local value = value / 100
             widget:setText(value .. "%")
         else
@@ -256,7 +256,7 @@ function refresh()
     for i = Skill.Fist, Skill.Transcendence do
         onSkillChange(player, i, player:getSkillLevel(i), player:getSkillLevelPercent(i))
 
-        if i > Skill.Mining then
+        if i > Skill.Wisdom then
             local ativedAdditionalSkills = hasAdditionalSkills
             if ativedAdditionalSkills then
                 if g_game.getClientVersion() >= 1281 then

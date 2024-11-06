@@ -300,6 +300,48 @@ function whenSkillsChange()
             elseif skillType == 'mining' then
                 skillPercent = player:getSkillLevelPercent(7)
                 skillColor = '#ffff33'
+            elseif skillType == 'smithing' then
+                skillPercent = player:getSkillLevelPercent(8)
+                skillColor = '#ffff33'
+            elseif skillType == 'enchanting' then
+                skillPercent = player:getSkillLevelPercent(9)
+                skillColor = '#ffff33'
+            elseif skillType == 'woodcutting' then
+                skillPercent = player:getSkillLevelPercent(10)
+                skillColor = '#ffff33'
+            elseif skillType == 'fletching' then
+                skillPercent = player:getSkillLevelPercent(11)
+                skillColor = '#ffff33'
+            elseif skillType == 'skinning' then
+                skillPercent = player:getSkillLevelPercent(12)
+                skillColor = '#ffff33'
+            elseif skillType == 'butchering' then
+                skillPercent = player:getSkillLevelPercent(13)
+                skillColor = '#ffff33'
+            elseif skillType == 'farming' then
+                skillPercent = player:getSkillLevelPercent(14)
+                skillColor = '#ffff33'
+            elseif skillType == 'cooking' then
+                skillPercent = player:getSkillLevelPercent(15)
+                skillColor = '#ffff33'
+            elseif skillType == 'crafting' then
+                skillPercent = player:getSkillLevelPercent(16)
+                skillColor = '#ffff33'
+            elseif skillType == 'herblore' then
+                skillPercent = player:getSkillLevelPercent(17)
+                skillColor = '#ffff33'
+            elseif skillType == 'alchemy' then
+                skillPercent = player:getSkillLevelPercent(18)
+                skillColor = '#ffff33'
+            elseif skillType == 'archaeology' then
+                skillPercent = player:getSkillLevelPercent(19)
+                skillColor = '#ffff33'
+            elseif skillType == 'music' then
+                skillPercent = player:getSkillLevelPercent(20)
+                skillColor = '#ffff33'
+            elseif skillType == 'wisdom' then
+                skillPercent = player:getSkillLevelPercent(21)
+                skillColor = '#ffff33'                                                                                                                                                                                                                                
             else
                 -- default skill: MAGIC
                 skillPercent = player:getMagicLevelPercent()

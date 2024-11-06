@@ -550,11 +550,263 @@ UIWidget
         anchors.left: icon.right
         margin-top: 15
         margin-left: 5
-        background-color: #00C000        
+        background-color: #00C000 
+    CharacterSkillBase
+      id: skillId8
+      anchors.top: skillId7.bottom
+      anchors.left: separator.left
+      anchors.right: parent.right
+      margin-top: 3
+      SkillNameLabel
+        !text: tr('Smithing')
+        color: #C0C0C0
+      SkillValueLabel
+      SkillCharacterIcon
+        anchors.left: parent.left
+        image-clip: 72 0 9 9
+      SkillCharacterPercentPanel
+        anchors.left: icon.right
+        margin-top: 15
+        margin-left: 5
+        background-color: #00C000
+    CharacterSkillBase
+      id: skillId9
+      anchors.top: skillId8.bottom
+      anchors.left: separator.left
+      anchors.right: parent.right
+      margin-top: 3
+      SkillNameLabel
+        !text: tr('Enchanting')
+        color: #C0C0C0
+      SkillValueLabel
+      SkillCharacterIcon
+        anchors.left: parent.left
+        image-clip: 72 0 9 9
+      SkillCharacterPercentPanel
+        anchors.left: icon.right
+        margin-top: 15
+        margin-left: 5
+        background-color: #00C000
+    CharacterSkillBase
+      id: skillId10
+      anchors.top: skillId9.bottom
+      anchors.left: separator.left
+      anchors.right: parent.right
+      margin-top: 3
+      SkillNameLabel
+        !text: tr('Woodcutting')
+        color: #C0C0C0
+      SkillValueLabel
+      SkillCharacterIcon
+        anchors.left: parent.left
+        image-clip: 72 0 9 9
+      SkillCharacterPercentPanel
+        anchors.left: icon.right
+        margin-top: 15
+        margin-left: 5
+        background-color: #00C000
+    CharacterSkillBase
+      id: skillId11
+      anchors.top: skillId10.bottom
+      anchors.left: separator.left
+      anchors.right: parent.right
+      margin-top: 3
+      SkillNameLabel
+        !text: tr('Fletching')
+        color: #C0C0C0
+      SkillValueLabel
+      SkillCharacterIcon
+        anchors.left: parent.left
+        image-clip: 72 0 9 9
+      SkillCharacterPercentPanel
+        anchors.left: icon.right
+        margin-top: 15
+        margin-left: 5
+        background-color: #00C000
+    CharacterSkillBase
+      id: skillId12
+      anchors.top: skillId11.bottom
+      anchors.left: separator.left
+      anchors.right: parent.right
+      margin-top: 3
+      SkillNameLabel
+        !text: tr('Skinning')
+        color: #C0C0C0
+      SkillValueLabel
+      SkillCharacterIcon
+        anchors.left: parent.left
+        image-clip: 72 0 9 9
+      SkillCharacterPercentPanel
+        anchors.left: icon.right
+        margin-top: 15
+        margin-left: 5
+        background-color: #00C000
+    CharacterSkillBase
+      id: skillId13
+      anchors.top: skillId12.bottom
+      anchors.left: separator.left
+      anchors.right: parent.right
+      margin-top: 3
+      SkillNameLabel
+        !text: tr('Butchering')
+        color: #C0C0C0
+      SkillValueLabel
+      SkillCharacterIcon
+        anchors.left: parent.left
+        image-clip: 72 0 9 9
+      SkillCharacterPercentPanel
+        anchors.left: icon.right
+        margin-top: 15
+        margin-left: 5
+        background-color: #00C000
+    CharacterSkillBase
+      id: skillId14
+      anchors.top: skillId13.bottom
+      anchors.left: separator.left
+      anchors.right: parent.right
+      margin-top: 3
+      SkillNameLabel
+        !text: tr('Farming')
+        color: #C0C0C0
+      SkillValueLabel
+      SkillCharacterIcon
+        anchors.left: parent.left
+        image-clip: 72 0 9 9
+      SkillCharacterPercentPanel
+        anchors.left: icon.right
+        margin-top: 15
+        margin-left: 5
+        background-color: #00C000
+    CharacterSkillBase
+      id: skillId15
+      anchors.top: skillId14.bottom
+      anchors.left: separator.left
+      anchors.right: parent.right
+      margin-top: 3
+      SkillNameLabel
+        !text: tr('Cooking')
+        color: #C0C0C0
+      SkillValueLabel
+      SkillCharacterIcon
+        anchors.left: parent.left
+        image-clip: 72 0 9 9
+      SkillCharacterPercentPanel
+        anchors.left: icon.right
+        margin-top: 15
+        margin-left: 5
+        background-color: #00C000
+    CharacterSkillBase
+      id: skillId16
+      anchors.top: skillId15.bottom
+      anchors.left: separator.left
+      anchors.right: parent.right
+      margin-top: 3
+      SkillNameLabel
+        !text: tr('Crafting')
+        color: #C0C0C0
+      SkillValueLabel
+      SkillCharacterIcon
+        anchors.left: parent.left
+        image-clip: 72 0 9 9
+      SkillCharacterPercentPanel
+        anchors.left: icon.right
+        margin-top: 15
+        margin-left: 5
+        background-color: #00C000
+    CharacterSkillBase
+      id: skillId17
+      anchors.top: skillId16.bottom
+      anchors.left: separator.left
+      anchors.right: parent.right
+      margin-top: 3
+      SkillNameLabel
+        !text: tr('Herblore')
+        color: #C0C0C0
+      SkillValueLabel
+      SkillCharacterIcon
+        anchors.left: parent.left
+        image-clip: 72 0 9 9
+      SkillCharacterPercentPanel
+        anchors.left: icon.right
+        margin-top: 15
+        margin-left: 5
+        background-color: #00C000
+    CharacterSkillBase
+      id: skillId18
+      anchors.top: skillId17.bottom
+      anchors.left: separator.left
+      anchors.right: parent.right
+      margin-top: 3
+      SkillNameLabel
+        !text: tr('Alchemy')
+        color: #C0C0C0
+      SkillValueLabel
+      SkillCharacterIcon
+        anchors.left: parent.left
+        image-clip: 72 0 9 9
+      SkillCharacterPercentPanel
+        anchors.left: icon.right
+        margin-top: 15
+        margin-left: 5
+        background-color: #00C000
+    CharacterSkillBase
+      id: skillId19
+      anchors.top: skillId18.bottom
+      anchors.left: separator.left
+      anchors.right: parent.right
+      margin-top: 3
+      SkillNameLabel
+        !text: tr('Archaeology')
+        color: #C0C0C0
+      SkillValueLabel
+      SkillCharacterIcon
+        anchors.left: parent.left
+        image-clip: 72 0 9 9
+      SkillCharacterPercentPanel
+        anchors.left: icon.right
+        margin-top: 15
+        margin-left: 5
+        background-color: #00C000
+    CharacterSkillBase
+      id: skillId20
+      anchors.top: skillId19.bottom
+      anchors.left: separator.left
+      anchors.right: parent.right
+      margin-top: 3
+      SkillNameLabel
+        !text: tr('Music')
+        color: #C0C0C0
+      SkillValueLabel
+      SkillCharacterIcon
+        anchors.left: parent.left
+        image-clip: 72 0 9 9
+      SkillCharacterPercentPanel
+        anchors.left: icon.right
+        margin-top: 15
+        margin-left: 5
+        background-color: #00C000
+    CharacterSkillBase
+      id: skillId21
+      anchors.top: skillId20.bottom
+      anchors.left: separator.left
+      anchors.right: parent.right
+      margin-top: 3
+      SkillNameLabel
+        !text: tr('Wisdom')
+        color: #C0C0C0
+      SkillValueLabel
+      SkillCharacterIcon
+        anchors.left: parent.left
+        image-clip: 72 0 9 9
+      SkillCharacterPercentPanel
+        anchors.left: icon.right
+        margin-top: 15
+        margin-left: 5
+        background-color: #00C000                                                                                                        
     Label
       !text: tr('Account Badges')
       margin-top: 12
-      anchors.top: skillId7.bottom
+      anchors.top: skillId21.bottom
       anchors.left: separator.left
       anchors.right: parent.right
       margin-left: 75

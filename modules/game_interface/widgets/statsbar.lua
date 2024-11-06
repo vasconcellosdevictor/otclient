@@ -49,6 +49,19 @@ local skillsTuples = {
     {skill = Skill.Sword,       key = 'sword',      icon = '/images/icons/icon_sword',       placement = 'left',     order = 4,  name = "Sword Fighting Skill"},
     {skill = Skill.Fishing,     key = 'fishing',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Fishing Fighting Skill"},
     {skill = Skill.Mining,     key = 'mining',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Mining Fighting Skill"},
+    {skill = Skill.Enchanting,     key = 'enchanting',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Enchanting Fighting Skill"},
+    {skill = Skill.Woodcutting,     key = 'woodcutting',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Woodcutting Fighting Skill"},
+    {skill = Skill.Fletching,     key = 'fletching',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Fletching Fighting Skill"},
+    {skill = Skill.Skinning,     key = 'skinning',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Skinning Fighting Skill"},
+    {skill = Skill.Butchering,     key = 'butchering',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Butchering Fighting Skill"},
+    {skill = Skill.Farming,     key = 'farming',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Farming Fighting Skill"},
+    {skill = Skill.Cooking,     key = 'cooking',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Cooking Fighting Skill"},
+    {skill = Skill.Crafting,     key = 'crafting',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Crafting Fighting Skill"},
+    {skill = Skill.Herblore,     key = 'herblore',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Herblore Fighting Skill"},
+    {skill = Skill.Alchemy,     key = 'alchemy',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Alchemy Fighting Skill"},
+    {skill = Skill.Archaeology,     key = 'archaeology',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Archaeology Fighting Skill"},
+    {skill = Skill.Music,     key = 'music',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Music Fighting Skill"},
+    {skill = Skill.Wisdom,     key = 'wisdom',    icon = '/images/icons/icon_fishing',     placement = 'right',    order = 4,  name = "Wisdom Fighting Skill"},
 }
 
 StatsBar = {}
