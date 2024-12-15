@@ -27,17 +27,16 @@ EnterGameWindow
   &stayLoggedBoxEnabled: false
   &stayLoggedBoxHeight: 24
   &disableToken : false
-  size: 280 302
+  size: 280 307
   @onEnter: EnterGame.doLogin()
-
-
+  opacity: 0.85
+  image-source: /images/ui/window1.png
 
   Label
     id: emailLabel
     !text: tr('Acc Name:') 
     anchors.left: parent.left
     anchors.top: parent.top
-
     opacity: 0.8
 
       
@@ -60,7 +59,7 @@ EnterGameWindow
     anchors.right: parent.right
     anchors.left: passwordLabel.right
     anchors.verticalCenter: passwordLabel.verticalCenter
-    margin-left: 5
+    margin-left: 6
 
   QtCheckBox
     id: rememberEmailBox
@@ -81,13 +80,28 @@ EnterGameWindow
     !specialtooltip: 'Be aware that your email address will be stored on your configuration file "config.otml" if you activate this option.'
     anchors.right: accountNameTextEdit.right
     anchors.verticalCenter: rememberEmailBox.verticalCenter
-    visible: false
+    visible: true
 
     $on:
       visible: true
 
     $!on:
       visible: false
+
+    
+  QtCheckBox
+    id: stayLoggedBox
+    !text: tr('Stay logged during session')
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 4
+    visible: true
+
+    $on:
+      visible: true
+      margin-top: 8
+
 
   Label
     !text: tr('Forgot password and/or email')
@@ -107,14 +121,21 @@ EnterGameWindow
             self:hide()
         end
 
+  HorizontalSeparator
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.top: prev.bottom
+    margin-top: 6
+
   MenuLabel
     id: authenticatorTokenLabel
     !text: tr('Authenticator Token')
     anchors.left: prev.left
     anchors.top: prev.bottom
     text-auto-resize: true
-    margin-top: -12
-    visible: false
+    margin-top: 4
+    visible: true
+    opacity: 0.8
 
     $on:
       visible: true
@@ -125,33 +146,13 @@ EnterGameWindow
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
-    margin-top: -22
-    visible: false
+    margin-top: 4
+    visible: true
     max-length: 8
 
     $on:
       visible: true
       margin-top: 2
-
-  QtCheckBox
-    id: stayLoggedBox
-    !text: tr('Stay logged during session')
-    anchors.left: parent.left
-    anchors.right: parent.right
-    anchors.top: prev.bottom
-    margin-top: 6
-    margin-top: -16
-    visible: false
-
-    $on:
-      visible: true
-      margin-top: 8
-
-  HorizontalSeparator
-    anchors.left: parent.left
-    anchors.right: parent.right
-    anchors.top: prev.bottom
-    margin-top: 8
 
   MenuLabel
     id: serverLabel
@@ -223,7 +224,7 @@ EnterGameWindow
     anchors.left: parent.left
     anchors.right: parent.right
     anchors.top: prev.bottom
-    margin-top: 2
+    margin-top: -8
 
   QtCheckBox
     id: httpLoginBox
@@ -245,7 +246,7 @@ EnterGameWindow
     !text: tr('Login')
     anchors.right: parent.right
     anchors.top: prev.bottom
-    margin-top: 9
+    margin-top: -24
     size: 86 20
     @onClick: EnterGame.doLogin()
 
