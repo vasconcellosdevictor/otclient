@@ -1,6 +1,7 @@
 EnterGameWindow < MainWindow
   !text: tr('Enter Game')
   size: 236 316
+  margin-top: 125
 
 
 EnterGameButton < Button
@@ -134,7 +135,7 @@ EnterGameWindow
     anchors.top: prev.bottom
     text-auto-resize: true
     margin-top: 4
-    visible: true
+    visible: false
     opacity: 0.8
 
     $on:
@@ -147,7 +148,7 @@ EnterGameWindow
     anchors.right: parent.right
     anchors.top: prev.bottom
     margin-top: 4
-    visible: true
+    visible: false
     max-length: 8
 
     $on:
